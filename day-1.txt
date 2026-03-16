@@ -272,3 +272,117 @@ Name varchar(100)
 (2,"Priya"),
 (3,"Arun")
 -->select * from sample
+===========================================
+OPERATING SYSTEMS CONCEPT – PROCESS VS THREAD
+
+Process
+A process is a program that is currently executing.
+
+Examples
+Chrome
+VS Code
+Spotify
+
+Thread
+A thread is the smallest unit of execution inside a process.
+
+A process can have multiple threads.
+
+Example
+Chrome browser:
+- One thread loads webpage
+- One thread handles UI
+- One thread downloads data
+
+Differences
+
+Process
+Heavyweight
+Separate memory
+Slow context switch
+
+Thread
+Lightweight
+Shared memory
+Fast context switch
+
+
+===========================================
+NETWORKING CONCEPT – TCP VS UDP
+
+TCP (Transmission Control Protocol)
+
+Characteristics
+- Reliable
+- Error checking
+- Data arrives in order
+
+Examples
+HTTP
+HTTPS
+FTP
+Email
+
+
+UDP (User Datagram Protocol)
+
+Characteristics
+- Faster
+- No guarantee of delivery
+- No error checking
+
+Examples
+Video streaming
+Online gaming
+VoIP calls
+
+
+Key Differences
+
+TCP
+Reliable
+Connection oriented
+Used for web pages
+
+UDP
+Fast
+Connectionless
+Used for streaming
+
+
+===========================================
+CORE COMPUTER SCIENCE CONCEPT – TIME COMPLEXITY
+
+Time complexity measures how fast an algorithm runs as input size grows.
+
+Common complexities
+
+O(1) – Access array element
+O(log n) – Binary search
+O(n) – Linear search
+O(n log n) – Merge sort
+O(n²) – Bubble sort
+
+
+Example
+
+for i in range(n):
+    print(i)
+
+Time Complexity
+O(n)
+
+
+===========================================
+INTERVIEW QUESTION OF THE DAY
+
+What is a Primary Key?
+
+Answer
+
+A Primary Key is a column in a database table that uniquely identifies
+each record in the table.
+
+Rules
+- Must be unique
+- Cannot be NULL
