@@ -1,0 +1,274 @@
+BLOCK 1 – APTITUDE (Percentages)
+
+Question 1
+A number increased by 20% becomes 120.
+Find the original number.
+
+Answer:
+formula --> original number = new number/(100+increased percentage)*100
+120/(100+20)*100
+1*100
+-->100(Answer)
+
+Question 2
+If the price of a laptop increases from ₹50,000 to ₹60,000,
+what is the percentage increase?
+
+Answer:
+formula:
+percentage increase = (final value-inital value/inital value)*100
+-->(60000-50000/50000)*100
+-->(10000/50000)*100
+-->(1/5)*100
+-->0.2*100
+-->20(Answer)
+
+Question 3
+A student scored 72 out of 90 in an exam.
+Find the percentage score.
+
+Answer:
+formula --> (scored mark/total mark)*100
+-->(72/90)*100
+-->(0.8)*100
+-->80(Answer)
+
+Question 4
+The population of a town increases from 50,000 to 60,000.
+Find the percentage increase.
+
+Answer:
+formula:
+percentage increase = (final value-inital value/inital value)*100
+-->(60000-50000/50000)*100
+-->(10000/50000)*100
+-->(1/5)*100
+-->0.2*100
+-->20(Answer)
+
+Question 5
+A shirt originally costs ₹800.
+After a 25% discount, what is the final price?
+
+Answer:
+formula:
+discount = orginal price*(discount percentage/100)
+-->discount = 800*(25/100)
+-->discount = 200
+-->final price = orginal price - discount
+-->600(Answer)
+
+
+===========================================
+BLOCK 2 – VERBAL ABILITY
+
+Reading Passage
+
+Technology is transforming industries rapidly. Artificial Intelligence,
+Machine Learning, and Automation are reshaping the way companies operate.
+Businesses now depend heavily on data-driven decision making.
+
+Questions
+
+1. What is the main idea of the passage?
+Answer:
+Transforming industries rapidly.
+
+2. Which technologies are mentioned in the passage?
+Answer:
+AI,ML and Automation
+
+3. Why are companies relying on data-driven decisions?
+Answer:
+Technology is increased so business reply on data- driven decisions.
+
+
+Grammar Correction
+
+1. She don't understand the problem.
+Answer:
+She doesn't understand the problem
+
+2. He have completed the task.
+Answer:
+He had completed the task.
+
+3. They was going to the meeting.
+Answer:
+They are going to the meeting.
+
+
+===========================================
+BLOCK 3 – COMMUNICATION PRACTICE
+
+Speak for 2 minutes on:
+
+Introduce Yourself
+
+Include:
+- Name
+- College
+- Branch
+- Skills
+- Projects
+- Career goal
+
+Example structure:
+
+My name is ______.
+I am currently pursuing ______ at ______ college.
+I am interested in software development and problem solving.
+I have worked on projects like ______.
+My goal is to become a software engineer in a product-based company.
+
+Answer:
+								SelfIntro
+		My name is Diviyadharshini R B.I am currently pursing 3rd year CSE at Muthayammal Engineering College. I am interested in software development and problem solving. I have worked on project like online shop which is based on MERN Stack and i have worked on the team project called  "Employee Directory" i have do some "api" call functions in that. My short- term goal is to get placed at a company and my long time gaol is to get a job in the abroad with a good package.
+
+===========================================
+BLOCK 4 – PROBLEM SOLVING
+
+Find the missing number in the array
+
+[1,2,3,4,6,7,8]
+
+Expected Output
+5
+
+Hint
+
+Use the formula:
+
+Sum = n*(n+1)/2
+
+
+Code:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+      int[] arr=new int[n];
+      for(int i=0;i<n;i++){
+        arr[i]=sc.nextInt();
+      }
+      int total=n+1;
+      int max=total*(total+1)/2;
+      int sum=0;
+      for(int i=0;i<n;i++){
+        sum+=arr[i];
+      }
+      int result = max-sum;
+      System.out.println(result);
+    }
+}
+
+Time Complexity:
+O(n)
+
+
+===========================================
+BLOCK 5 – DATA STRUCTURES & ALGORITHMS
+
+Topic: Arrays
+
+Problem 1 – Two Sum
+
+Given an array of integers and a target value,
+return the indices of two numbers whose sum equals the target.
+
+Example
+
+nums = [2,7,11,15]
+target = 9
+
+Output
+[0,1]
+
+
+Python Solution
+
+def twoSum(nums,target):
+
+    hashmap = {}
+
+    for i,num in enumerate(nums):
+
+        diff = target - num
+
+        if diff in hashmap:
+            return [hashmap[diff],i]
+
+        hashmap[num] = i
+
+Time Complexity
+
+O(n)
+
+
+Practice Problem
+
+Find the maximum element in the array
+
+[3,8,1,10,4]
+
+Solution:
+
+static void missing(int[] arr){
+    int n=arr.length;
+    int left=0;
+    int right=n-1;
+    int max=arr[0];
+    while(left<right){
+      if(arr[left]>max){
+        max=arr[left];
+      }
+      if(arr[right]>max){
+        max=arr[right];
+      }
+      left++;
+      right--;
+    }
+    System.out.println(max);
+  }
+
+
+
+===========================================
+BLOCK 6 – CORE CS CONCEPTS
+
+DBMS CONCEPT – PRIMARY KEY
+
+A Primary Key is a column in a database table that uniquely identifies
+each row.
+
+Properties
+- Must be unique
+- Cannot be NULL
+- Only one primary key per table
+
+Example
+
+Student Table
+
+ID   Name
+1    Rahul
+2    Priya
+3    Arun
+
+Here ID is the primary key.
+
+
+Answer:
+
+-->create table sample(
+ID int primary key,
+Name varchar(100)
+);
+-->select * from sample
+-->insert into sample(ID,Name) values
+(1,"Rahul"),
+(2,"Priya"),
+(3,"Arun")
+-->select * from sample
